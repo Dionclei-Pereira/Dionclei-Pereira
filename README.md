@@ -19,7 +19,7 @@
 ### 🚀 Main Skills
 
 [![My Skills](https://skillicons.dev/icons?i=java,cs,ts,spring,rabbitmq,graphql)](https://skillicons.dev) <br>
-[![My Skills](https://skillicons.dev/icons?i=hibernate,bootstrap,dotnet,maven,mysql,jquery)](https://skillicons.dev)
+[![My Skills](https://skillicons.dev/icons?i=hibernate,bootstrap,dotnet,maven,mysql,sqlite)](https://skillicons.dev)
 
 </div>
 
@@ -27,7 +27,7 @@
 
 ### 📝 Learning
 
-[![My Skills](https://skillicons.dev/icons?i=angular,tailwind,mongodb,nodejs)](https://skillicons.dev)
+[![My Skills](https://skillicons.dev/icons?i=angular,docker,aws,react,mongodb,nodejs)](https://skillicons.dev)
 
 </div>
 
