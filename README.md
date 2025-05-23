@@ -37,7 +37,7 @@
   <img 
     alt="GitHub Stats" 
     height="200"
-    src="https://github-readme-stats.vercel.app/api/top-langs/?username=Dionclei-Pereira&theme=radical&layout=compact&langs_count=9&hide=html,c" 
+    src="https://github-readme-stats.vercel.app/api/top-langs/?username=Dionclei-Pereira&theme=radical&layout=compact&langs_count=6&hide=html,dockerfile" 
   />
 </p>
 
