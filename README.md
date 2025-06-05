@@ -7,7 +7,7 @@
 ### About Me
  🎓 18 years old, Software Engineering student at UNC (Universidade do Contestado) - Mafra <br>
  💻 Passionate about Java and C# backend development <br>
- 🌐 Currently exploring Angular and front-end development <br>
+ 🌐 Currently exploring frontend development with Angular and React <br>
  🚀 Always learning and building cool projects <br>
 
 </div>
