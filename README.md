@@ -18,8 +18,8 @@
 
 ### 🚀 Main Skills
 
-[![My Skills](https://skillicons.dev/icons?i=java,ts,cs,spring,rabbitmq,hibernate)](https://skillicons.dev) <br>
-[![My Skills](https://skillicons.dev/icons?i=graphql,bootstrap,dotnet,maven,mysql,sqlite)](https://skillicons.dev)
+[![My Skills](https://skillicons.dev/icons?i=java,ts,cs,spring,rabbitmq,graphql)](https://skillicons.dev) <br>
+[![My Skills](https://skillicons.dev/icons?i=hibernate,bootstrap,dotnet,maven,mysql,sqlite)](https://skillicons.dev)
 
 </div>
 
