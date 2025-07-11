@@ -54,7 +54,7 @@
 <img 
   alt="Top Langs"
   height="180"
-  src="https://github-readme-stats.vercel.app/api/top-langs/?username=Dionclei-Pereira&theme=nightowl&layout=compact&langs_count=6&hide=html,dockerfile"
+  src="https://github-readme-stats.vercel.app/api/top-langs/?username=Dionclei-Pereira&theme=nightowl&layout=compact&langs_count=6&hide=html,dockerfile,c"
 />
 
 </div>
