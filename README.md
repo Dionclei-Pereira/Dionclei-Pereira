@@ -27,7 +27,7 @@
 <br/>
 
 ### 📚 Currently Learning
-[![My Skills](https://skillicons.dev/icons?i=angular,react,docker,aws,mongodb,nodejs)](https://skillicons.dev)
+[![My Skills](https://skillicons.dev/icons?i=angular,react,docker,aws,mongodb,nodejs,express,firebase)](https://skillicons.dev)
 
 </div>
 
@@ -35,9 +35,9 @@
 
 ## 🗺️ Tech Roadmap
 
-**Backend:** Java • Spring • .NET • C# <br/>
+**Backend:** Java • Spring • Express • TS/JS <br/>
 **Frontend:** Angular • React (learning) <br/>
-**DevOps:** Docker • AWS (learning) <br/>
+**DevOps:** Docker • AWS (learning) • Firebase (Learning) <br/>
 **Database:** MySQL • SQLite • MongoDB (learning)
 
 </div>
