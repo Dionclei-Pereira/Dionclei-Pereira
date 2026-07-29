@@ -6,8 +6,8 @@
   <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=500&size=22&pause=1000&color=00FFDD&center=true&vCenter=true&width=435&lines=Software+Engineering;Backend+Developer;Frontend+Explorer;Always+Learning+%F0%9F%9A%80" alt="Typing SVG" />
 </p>
 
-🎓 18 years old | Software Engineering student at **UNC - Mafra** <br/>
-💻 Passionate about **Java** & **TypeScript** backend development <br/>
+🎓 19 years old | Software Engineering student at **UNC - Mafra** <br/>
+💻 Passionate about **Java** & **PHP** backend development <br/>
 🌐 Exploring **Angular** & **React** frontend technologies <br/>
 🚀 Always learning and building cool projects <br/>
 
@@ -21,13 +21,13 @@
 ## 🚀 Tech Stack
 
 ### 💻 Main Skills
-[![My Skills](https://skillicons.dev/icons?i=java,cs,ts,spring,rabbitmq,graphql)](https://skillicons.dev) <br/>
-[![My Skills](https://skillicons.dev/icons?i=dotnet,hibernate,bootstrap,mysql,maven,sqlite)](https://skillicons.dev)
+[![My Skills](https://skillicons.dev/icons?i=java,php,ts,rabbitmq,hibernate,mysql)](https://skillicons.dev) <br/>
+[![My Skills](https://skillicons.dev/icons?i=spring,laravel,angular,bootstrap,aws,docker)](https://skillicons.dev)
 
 <br/>
 
 ### 📚 Currently Learning
-[![My Skills](https://skillicons.dev/icons?i=angular,react,docker,aws,mongodb,nodejs,express,firebase)](https://skillicons.dev)
+[![My Skills](https://skillicons.dev/icons?i=react,mongodb,nodejs,firebase)](https://skillicons.dev)
 
 </div>
 
@@ -35,9 +35,9 @@
 
 ## 🗺️ Tech Roadmap
 
-**Backend:** Java • Spring • Express • TS/JS <br/>
+**Backend:** Java • Spring • Laravel • PHP <br/>
 **Frontend:** Angular • React (learning) <br/>
-**DevOps:** Docker • AWS (learning) • Firebase (Learning) <br/>
+**DevOps:** Docker • AWS • Firebase <br/>
 **Database:** MySQL • SQLite • MongoDB (learning)
 
 </div>
