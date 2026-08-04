@@ -49,7 +49,7 @@
 <img
   alt="Top Langs"
   height="180"
-  src="https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=Dionclei-Pereira&theme=nightowl&layout=compact&langs_count=6"
+  src="https://github-readme-stats.shion.dev/api/top-langs/?username=Dionclei-Pereira&layout=compact&theme=nightowl&hide=dockerfile,html,blade"
 />
 
 <img
