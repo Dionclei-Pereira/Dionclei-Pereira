@@ -47,15 +47,15 @@
 ## 📊 GitHub Stats
 
 <img
-  alt="GitHub Stats"
-  height="180"
-  src="https://github-readme-stats-sigma-five.vercel.app/api?username=Dionclei-Pereira&theme=nightowl&hide=contribs&include_all_commits=true&show_icons=true"
-/>
-
-<img
   alt="Top Langs"
   height="180"
   src="https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=Dionclei-Pereira&theme=nightowl&layout=compact&langs_count=6"
+/>
+
+<img
+  alt="GitHub Streak"
+  height="180"
+  src="https://streak-stats.demolab.com?user=Dionclei-Pereira&theme=nightowl"
 />
 
 </div>
