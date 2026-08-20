@@ -1,305 +1,250 @@
 <svg
     xmlns="http://www.w3.org/2000/svg"
     width="500"
-    height="220"
-    viewBox="0 0 500 220"
+    height="190"
+    viewBox="0 0 500 190"
 >
 
-  <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#011627"/>
-      <stop offset="100%" stop-color="#020E1A"/>
-    </linearGradient>
-  </defs>
-
+  <!-- Fundo -->
   <rect
-    width="100%"
-    height="100%"
-    rx="12"
-    fill="url(#bg)"
+    x="0.5"
+    y="0.5"
+    width="499"
+    height="189"
+    rx="5"
+    fill="#011627"
+    stroke="#A6ACCD"
+    stroke-width="1"
   />
 
+  <!-- Título -->
   <text
-    x="28"
-    y="36"
-    fill="#D6DEEB"
+    x="24"
+    y="37"
+    fill="#C792EA"
     font-family="Arial, Helvetica, sans-serif"
-    font-size="18"
+    font-size="16"
     font-weight="600"
   >
-    Top Languages
+    Most Used Languages
   </text>
 
+  <rect
+    x="24"
+    y="54"
+    width="450"
+    height="9"
+    rx="4"
+    fill="#1B2B3A"
+  />
+
+      <rect
+        x="24.00"
+        y="54"
+        width="159.53"
+        height="9"
+        fill="#ED8B00"
+      />
+    
+      <rect
+        x="183.53"
+        y="54"
+        width="141.16"
+        height="9"
+        fill="#777BB4"
+      />
+    
+      <rect
+        x="324.69"
+        y="54"
+        width="78.22"
+        height="9"
+        fill="#512BD4"
+      />
+    
+      <rect
+        x="402.91"
+        y="54"
+        width="61.81"
+        height="9"
+        fill="#3178C6"
+      />
+    
+      <rect
+        x="464.72"
+        y="54"
+        width="7.81"
+        height="9"
+        fill="#F7DF1E"
+      />
+    
+      <rect
+        x="472.53"
+        y="54"
+        width="1.47"
+        height="9"
+        fill="#3776AB"
+      />
+    
+      <circle
+        cx="29"
+        cy="88"
+        r="5"
+        fill="#ED8B00"
+      />
+    
       <text
-        x="28"
-        y="65"
-        fill="#D6DEEB"
+        x="40"
+        y="92"
+        fill="#82AAFF"
         font-family="Arial, Helvetica, sans-serif"
-        font-size="12"
+        font-size="11"
       >
         Java
       </text>
 
-      <rect
-        x="120"
-        y="55"
-        width="280"
-        height="8"
-        rx="4"
-        fill="#1B2B3A"
-      />
-
-      <rect
-        x="120"
-        y="55"
-        width="280.00"
-        height="8"
-        rx="4"
-        fill="#ED8B00"
-      />
-
       <text
-        x="420"
-        y="65"
-        fill="#A6ACCD"
+        x="64.8"
+        y="92"
+        fill="#7FDBCA"
         font-family="Arial, Helvetica, sans-serif"
-        font-size="12"
-        text-anchor="end"
+        font-size="11"
       >
-        35.4%
+        35.45%
       </text>
     
+      <circle
+        cx="185"
+        cy="88"
+        r="5"
+        fill="#777BB4"
+      />
+    
       <text
-        x="28"
-        y="85"
-        fill="#D6DEEB"
+        x="196"
+        y="92"
+        fill="#82AAFF"
         font-family="Arial, Helvetica, sans-serif"
-        font-size="12"
+        font-size="11"
       >
         PHP
       </text>
 
-      <rect
-        x="120"
-        y="75"
-        width="280"
-        height="8"
-        rx="4"
-        fill="#1B2B3A"
-      />
-
-      <rect
-        x="120"
-        y="75"
-        width="247.77"
-        height="8"
-        rx="4"
-        fill="#777BB4"
-      />
-
       <text
-        x="420"
-        y="85"
-        fill="#A6ACCD"
+        x="214.6"
+        y="92"
+        fill="#7FDBCA"
         font-family="Arial, Helvetica, sans-serif"
-        font-size="12"
-        text-anchor="end"
+        font-size="11"
       >
-        31.3%
+        31.37%
       </text>
     
+      <circle
+        cx="29"
+        cy="115"
+        r="5"
+        fill="#512BD4"
+      />
+    
       <text
-        x="28"
-        y="105"
-        fill="#D6DEEB"
+        x="40"
+        y="119"
+        fill="#82AAFF"
         font-family="Arial, Helvetica, sans-serif"
-        font-size="12"
+        font-size="11"
       >
         C#
       </text>
 
-      <rect
-        x="120"
-        y="95"
-        width="280"
-        height="8"
-        rx="4"
-        fill="#1B2B3A"
-      />
-
-      <rect
-        x="120"
-        y="95"
-        width="137.29"
-        height="8"
-        rx="4"
-        fill="#512BD4"
-      />
-
       <text
-        x="420"
-        y="105"
-        fill="#A6ACCD"
+        x="52.4"
+        y="119"
+        fill="#7FDBCA"
         font-family="Arial, Helvetica, sans-serif"
-        font-size="12"
-        text-anchor="end"
+        font-size="11"
       >
-        17.3%
+        17.38%
       </text>
     
+      <circle
+        cx="185"
+        cy="115"
+        r="5"
+        fill="#3178C6"
+      />
+    
       <text
-        x="28"
-        y="125"
-        fill="#D6DEEB"
+        x="196"
+        y="119"
+        fill="#82AAFF"
         font-family="Arial, Helvetica, sans-serif"
-        font-size="12"
+        font-size="11"
       >
         TypeScript
       </text>
 
-      <rect
-        x="120"
-        y="115"
-        width="280"
-        height="8"
-        rx="4"
-        fill="#1B2B3A"
-      />
-
-      <rect
-        x="120"
-        y="115"
-        width="108.48"
-        height="8"
-        rx="4"
-        fill="#3178C6"
-      />
-
       <text
-        x="420"
-        y="125"
-        fill="#A6ACCD"
+        x="258.0"
+        y="119"
+        fill="#7FDBCA"
         font-family="Arial, Helvetica, sans-serif"
-        font-size="12"
-        text-anchor="end"
+        font-size="11"
       >
-        13.7%
+        13.73%
       </text>
     
+      <circle
+        cx="29"
+        cy="142"
+        r="5"
+        fill="#F7DF1E"
+      />
+    
       <text
-        x="28"
-        y="145"
-        fill="#D6DEEB"
+        x="40"
+        y="146"
+        fill="#82AAFF"
         font-family="Arial, Helvetica, sans-serif"
-        font-size="12"
+        font-size="11"
       >
         JavaScript
       </text>
 
-      <rect
-        x="120"
-        y="135"
-        width="280"
-        height="8"
-        rx="4"
-        fill="#1B2B3A"
-      />
-
-      <rect
-        x="120"
-        y="135"
-        width="13.71"
-        height="8"
-        rx="4"
-        fill="#F7DF1E"
-      />
-
       <text
-        x="420"
-        y="145"
-        fill="#A6ACCD"
+        x="102.0"
+        y="146"
+        fill="#7FDBCA"
         font-family="Arial, Helvetica, sans-serif"
-        font-size="12"
-        text-anchor="end"
+        font-size="11"
       >
-        1.7%
+        1.74%
       </text>
     
+      <circle
+        cx="185"
+        cy="142"
+        r="5"
+        fill="#3776AB"
+      />
+    
       <text
-        x="28"
-        y="165"
-        fill="#D6DEEB"
+        x="196"
+        y="146"
+        fill="#82AAFF"
         font-family="Arial, Helvetica, sans-serif"
-        font-size="12"
+        font-size="11"
       >
         Python
       </text>
 
-      <rect
-        x="120"
-        y="155"
-        width="280"
-        height="8"
-        rx="4"
-        fill="#1B2B3A"
-      />
-
-      <rect
-        x="120"
-        y="155"
-        width="2.58"
-        height="8"
-        rx="4"
-        fill="#3776AB"
-      />
-
       <text
-        x="420"
-        y="165"
-        fill="#A6ACCD"
+        x="233.2"
+        y="146"
+        fill="#7FDBCA"
         font-family="Arial, Helvetica, sans-serif"
-        font-size="12"
-        text-anchor="end"
+        font-size="11"
       >
-        0.3%
-      </text>
-    
-      <text
-        x="28"
-        y="185"
-        fill="#D6DEEB"
-        font-family="Arial, Helvetica, sans-serif"
-        font-size="12"
-      >
-        Batchfile
-      </text>
-
-      <rect
-        x="120"
-        y="175"
-        width="280"
-        height="8"
-        rx="4"
-        fill="#1B2B3A"
-      />
-
-      <rect
-        x="120"
-        y="175"
-        width="2.16"
-        height="8"
-        rx="4"
-        fill="#ADD7FF"
-      />
-
-      <text
-        x="420"
-        y="185"
-        fill="#A6ACCD"
-        font-family="Arial, Helvetica, sans-serif"
-        font-size="12"
-        text-anchor="end"
-      >
-        0.3%
+        0.33%
       </text>
     </svg>
