@@ -49,7 +49,7 @@
 <img
   alt="Top Langs"
   height="180"
-  src="https://github-readme-stats.shion.dev/api/top-langs/?username=Dionclei-Pereira&layout=compact&theme=nightowl&hide=dockerfile,html,blade"
+  src="top-langs.svg"
 />
 
 <img
