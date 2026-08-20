@@ -1,298 +1,261 @@
 <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="500"
-    height="190"
-    viewBox="0 0 500 190"
+  xmlns="http://www.w3.org/2000/svg"
+  width="350"
+  height="180"
+  viewBox="0 0 350 180"
 >
 
-  <!-- =====================================================
-       FUNDO
-       ===================================================== -->
+<rect
+  x="0.50"
+  y="0.50"
+  width="349.00"
+  height="179.00"
+  rx="6.00"
+  fill="#011627"
+  stroke="#A6ACCD"
+  stroke-width="1.00"
+/>
 
-  <rect
-    x="0.5"
-    y="0.5"
-    width="499"
-    height="189"
-    rx="6"
-    fill="#011627"
-    stroke="#A6ACCD"
-    stroke-width="1"
-  />
+<text
+  x="28.00"
+  y="37.00"
+  fill="#C792EA"
+  font-family="Arial, Helvetica, sans-serif"
+  font-size="16.00"
+  font-weight="600"
+>
+  Most Used Languages
+</text>
 
-  <!-- =====================================================
-       TÍTULO
-       ===================================================== -->
+<rect
+  x="28.00"
+  y="54.00"
+  width="294.00"
+  height="9.00"
+  rx="4.50"
+  fill="#1B2B3A"
+/>
 
-  <text
-    x="24"
-    y="37"
-    fill="#C792EA"
-    font-family="Arial, Helvetica, sans-serif"
-    font-size="16"
-    font-weight="600"
-  >
-    Most Used Languages
-  </text>
+<rect
+  x="28.00"
+  y="54.00"
+  width="107.58"
+  height="9.00"
+  fill="#ED8B00"
+/>
 
-  <rect
-    x="24"
-    y="54"
-    width="452"
-    height="9"
-    rx="4.5"
-    fill="#1B2B3A"
-  />
+<rect
+  x="135.58"
+  y="54.00"
+  width="95.20"
+  height="9.00"
+  fill="#777BB4"
+/>
 
-      <rect
-        x="24.00"
-        y="54"
-        width="160.24"
-        height="9"
-        fill="#ED8B00"
-      />
-    
-      <rect
-        x="184.24"
-        y="54"
-        width="141.79"
-        height="9"
-        fill="#777BB4"
-      />
-    
-      <rect
-        x="326.03"
-        y="54"
-        width="78.57"
-        height="9"
-        fill="#512BD4"
-      />
-    
-      <rect
-        x="404.60"
-        y="54"
-        width="62.08"
-        height="9"
-        fill="#3178C6"
-      />
-    
-      <rect
-        x="466.68"
-        y="54"
-        width="7.84"
-        height="9"
-        fill="#F7DF1E"
-      />
-    
-      <rect
-        x="474.52"
-        y="54"
-        width="1.48"
-        height="9"
-        fill="#3776AB"
-      />
-    
-      <!-- Indicador -->
+<rect
+  x="230.78"
+  y="54.00"
+  width="43.34"
+  height="9.00"
+  fill="#512BD4"
+/>
 
-      <circle
-        cx="29"
-        cy="90"
-        r="5"
-        fill="#ED8B00"
-      />
+<rect
+  x="274.11"
+  y="54.00"
+  width="41.68"
+  height="9.00"
+  fill="#3178C6"
+/>
 
-      <!-- Nome da linguagem -->
+<rect
+  x="315.79"
+  y="54.00"
+  width="5.21"
+  height="9.00"
+  fill="#F7DF1E"
+/>
 
-      <text
-        x="42"
-        y="94"
-        fill="#82AAFF"
-        font-family="Arial, Helvetica, sans-serif"
-        font-size="11"
-      >
-        Java
-      </text>
+<rect
+  x="321.01"
+  y="54.00"
+  width="0.99"
+  height="9.00"
+  fill="#3776AB"
+/>
 
-      <!-- Porcentagem -->
 
-      <text
-        x="230"
-        y="94"
-        fill="#7FDBCA"
-        font-family="Arial, Helvetica, sans-serif"
-        font-size="11"
-        text-anchor="end"
-      >
-        35.45%
-      </text>
-    
-      <!-- Indicador -->
+<circle
+  cx="33.83"
+  cy="90.00"
+  r="5.00"
+  fill="#ED8B00"
+/>
 
-      <circle
-        cx="265"
-        cy="90"
-        r="5"
-        fill="#3178C6"
-      />
+<text
+  x="49.00"
+  y="94.00"
+  fill="#82AAFF"
+  font-family="Arial, Helvetica, sans-serif"
+  font-size="11.00"
+>
+  Java
+</text>
 
-      <!-- Nome da linguagem -->
+<text
+  x="161.00"
+  y="94.00"
+  fill="#7FDBCA"
+  font-family="Arial, Helvetica, sans-serif"
+  font-size="11.00"
+  text-anchor="end"
+>
+  36.59%
+</text>
 
-      <text
-        x="278"
-        y="94"
-        fill="#82AAFF"
-        font-family="Arial, Helvetica, sans-serif"
-        font-size="11"
-      >
-        TypeScript
-      </text>
 
-      <!-- Porcentagem -->
+<circle
+  cx="187.83"
+  cy="90.00"
+  r="5.00"
+  fill="#3178C6"
+/>
 
-      <text
-        x="476"
-        y="94"
-        fill="#7FDBCA"
-        font-family="Arial, Helvetica, sans-serif"
-        font-size="11"
-        text-anchor="end"
-      >
-        13.73%
-      </text>
-    
-      <!-- Indicador -->
+<text
+  x="203.00"
+  y="94.00"
+  fill="#82AAFF"
+  font-family="Arial, Helvetica, sans-serif"
+  font-size="11.00"
+>
+  TypeScript
+</text>
 
-      <circle
-        cx="29"
-        cy="121"
-        r="5"
-        fill="#777BB4"
-      />
+<text
+  x="322.00"
+  y="94.00"
+  fill="#7FDBCA"
+  font-family="Arial, Helvetica, sans-serif"
+  font-size="11.00"
+  text-anchor="end"
+>
+  14.18%
+</text>
 
-      <!-- Nome da linguagem -->
 
-      <text
-        x="42"
-        y="125"
-        fill="#82AAFF"
-        font-family="Arial, Helvetica, sans-serif"
-        font-size="11"
-      >
-        PHP
-      </text>
+<circle
+  cx="33.83"
+  cy="121.00"
+  r="5.00"
+  fill="#777BB4"
+/>
 
-      <!-- Porcentagem -->
+<text
+  x="49.00"
+  y="125.00"
+  fill="#82AAFF"
+  font-family="Arial, Helvetica, sans-serif"
+  font-size="11.00"
+>
+  PHP
+</text>
 
-      <text
-        x="230"
-        y="125"
-        fill="#7FDBCA"
-        font-family="Arial, Helvetica, sans-serif"
-        font-size="11"
-        text-anchor="end"
-      >
-        31.37%
-      </text>
-    
-      <!-- Indicador -->
+<text
+  x="161.00"
+  y="125.00"
+  fill="#7FDBCA"
+  font-family="Arial, Helvetica, sans-serif"
+  font-size="11.00"
+  text-anchor="end"
+>
+  32.38%
+</text>
 
-      <circle
-        cx="265"
-        cy="121"
-        r="5"
-        fill="#F7DF1E"
-      />
 
-      <!-- Nome da linguagem -->
+<circle
+  cx="187.83"
+  cy="121.00"
+  r="5.00"
+  fill="#F7DF1E"
+/>
 
-      <text
-        x="278"
-        y="125"
-        fill="#82AAFF"
-        font-family="Arial, Helvetica, sans-serif"
-        font-size="11"
-      >
-        JavaScript
-      </text>
+<text
+  x="203.00"
+  y="125.00"
+  fill="#82AAFF"
+  font-family="Arial, Helvetica, sans-serif"
+  font-size="11.00"
+>
+  JavaScript
+</text>
 
-      <!-- Porcentagem -->
+<text
+  x="322.00"
+  y="125.00"
+  fill="#7FDBCA"
+  font-family="Arial, Helvetica, sans-serif"
+  font-size="11.00"
+  text-anchor="end"
+>
+  1.77%
+</text>
 
-      <text
-        x="476"
-        y="125"
-        fill="#7FDBCA"
-        font-family="Arial, Helvetica, sans-serif"
-        font-size="11"
-        text-anchor="end"
-      >
-        1.74%
-      </text>
-    
-      <!-- Indicador -->
 
-      <circle
-        cx="29"
-        cy="152"
-        r="5"
-        fill="#512BD4"
-      />
+<circle
+  cx="33.83"
+  cy="152.00"
+  r="5.00"
+  fill="#512BD4"
+/>
 
-      <!-- Nome da linguagem -->
+<text
+  x="49.00"
+  y="156.00"
+  fill="#82AAFF"
+  font-family="Arial, Helvetica, sans-serif"
+  font-size="11.00"
+>
+  C#
+</text>
 
-      <text
-        x="42"
-        y="156"
-        fill="#82AAFF"
-        font-family="Arial, Helvetica, sans-serif"
-        font-size="11"
-      >
-        C#
-      </text>
+<text
+  x="161.00"
+  y="156.00"
+  fill="#7FDBCA"
+  font-family="Arial, Helvetica, sans-serif"
+  font-size="11.00"
+  text-anchor="end"
+>
+  14.74%
+</text>
 
-      <!-- Porcentagem -->
 
-      <text
-        x="230"
-        y="156"
-        fill="#7FDBCA"
-        font-family="Arial, Helvetica, sans-serif"
-        font-size="11"
-        text-anchor="end"
-      >
-        17.38%
-      </text>
-    
-      <!-- Indicador -->
+<circle
+  cx="187.83"
+  cy="152.00"
+  r="5.00"
+  fill="#3776AB"
+/>
 
-      <circle
-        cx="265"
-        cy="152"
-        r="5"
-        fill="#3776AB"
-      />
+<text
+  x="203.00"
+  y="156.00"
+  fill="#82AAFF"
+  font-family="Arial, Helvetica, sans-serif"
+  font-size="11.00"
+>
+  Python
+</text>
 
-      <!-- Nome da linguagem -->
+<text
+  x="322.00"
+  y="156.00"
+  fill="#7FDBCA"
+  font-family="Arial, Helvetica, sans-serif"
+  font-size="11.00"
+  text-anchor="end"
+>
+  0.34%
+</text>
 
-      <text
-        x="278"
-        y="156"
-        fill="#82AAFF"
-        font-family="Arial, Helvetica, sans-serif"
-        font-size="11"
-      >
-        Python
-      </text>
-
-      <!-- Porcentagem -->
-
-      <text
-        x="476"
-        y="156"
-        fill="#7FDBCA"
-        font-family="Arial, Helvetica, sans-serif"
-        font-size="11"
-        text-anchor="end"
-      >
-        0.33%
-      </text>
-    </svg>
+</svg>
