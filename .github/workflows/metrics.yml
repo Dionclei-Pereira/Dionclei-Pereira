@@ -26,341 +26,280 @@ jobs:
           import html
           import urllib.request
           from collections import Counter
-
-          # ============================================================
-          # CONFIGURAÇÃO
-          # ============================================================
-
+          
           TOKEN = os.environ["GH_TOKEN"]
           USERNAME = "Dionclei-Pereira"
-
+          
           headers = {
-              "Authorization": f"Bearer {TOKEN}",
-              "Accept": "application/vnd.github+json",
-              "X-GitHub-Api-Version": "2022-11-28",
+            "Authorization": f"Bearer {TOKEN}",
+            "Accept": "application/vnd.github+json",
+            "X-GitHub-Api-Version": "2022-11-28",
           }
-
-          # ============================================================
-          # FUNÇÃO PARA ACESSAR A API DO GITHUB
-          # ============================================================
-
+          
           def github(url):
-              req = urllib.request.Request(
-                  url,
-                  headers=headers
-              )
-
-              with urllib.request.urlopen(req) as response:
-                  return json.load(response)
-
-          # ============================================================
-          # BUSCA TODOS OS REPOSITÓRIOS
-          # ============================================================
-
+            req = urllib.request.Request(
+                url,
+                headers=headers
+            )
+          
+            with urllib.request.urlopen(req) as response:
+                return json.load(response)
+          
           repos = []
           page = 1
-
+          
           while True:
-
-              url = (
-                  f"https://api.github.com/user/repos"
-                  f"?per_page=100"
-                  f"&page={page}"
-                  f"&affiliation=owner,collaborator,organization_member"
-              )
-
-              data = github(url)
-
-              if not data:
-                  break
-
-              repos.extend(data)
-
-              page += 1
-
+          
+            url = (
+                f"https://api.github.com/user/repos"
+                f"?per_page=100"
+                f"&page={page}"
+                f"&affiliation=owner,collaborator,organization_member"
+            )
+          
+            data = github(url)
+          
+            if not data:
+                break
+          
+            repos.extend(data)
+          
+            page += 1
+          
           print(f"Repositórios encontrados: {len(repos)}")
-
-          # ============================================================
-          # LINGUAGENS IGNORADAS
-          # ============================================================
-
+          
           ignored = {
-              "HTML",
-              "CSS",
-              "SCSS",
-              "Dockerfile",
-              "Blade",
+            "HTML",
+            "CSS",
+            "SCSS",
+            "Dockerfile",
+            "Blade",
           }
-
-          # ============================================================
-          # CONTADOR DE BYTES
-          # ============================================================
-
+          
           languages = Counter()
-
-          # ============================================================
-          # ANALISA AS LINGUAGENS DE CADA REPOSITÓRIO
-          # ============================================================
-
+          
           for repo in repos:
-
-              name = repo["full_name"]
-
-              print(f"Analisando: {name}")
-
-              try:
-
-                  data = github(
-                      f"https://api.github.com/repos/{name}/languages"
-                  )
-
-                  for language, bytes_count in data.items():
-
-                      if language not in ignored:
-                          languages[language] += bytes_count
-
-              except Exception as e:
-
-                  print(
-                      f"Erro em {name}: {e}"
-                  )
-
-          # ============================================================
-          # PEGA AS 6 PRINCIPAIS LINGUAGENS
-          # ============================================================
-
+          
+            name = repo["full_name"]
+          
+            print(f"Analisando: {name}")
+          
+            try:
+          
+                data = github(
+                    f"https://api.github.com/repos/{name}/languages"
+                )
+          
+                for language, bytes_count in data.items():
+          
+                    if language not in ignored:
+                        languages[language] += bytes_count
+          
+            except Exception as e:
+          
+                print(
+                    f"Erro em {name}: {e}"
+                )
+          
           languages = languages.most_common(6)
-
+          
           total = sum(
-              value for _, value in languages
+            value for _, value in languages
           )
-
+          
           if total == 0:
-              raise RuntimeError(
-                  "Nenhuma linguagem encontrada."
-              )
-
-          # ============================================================
-          # CALCULA PORCENTAGENS
-          # ============================================================
-
+            raise RuntimeError(
+                "Nenhuma linguagem encontrada."
+            )
+          
           results = []
-
+          
           for language, value in languages:
-
-              percentage = (
-                  value / total
-              ) * 100
-
-              results.append({
-                  "name": language,
-                  "percentage": percentage
-              })
-
+          
+            percentage = (
+                value / total
+            ) * 100
+          
+            results.append({
+                "name": language,
+                "percentage": percentage
+            })
+          
           print()
           print("Resultado:")
-
+          
           for item in results:
-
-              print(
-                  f'{item["name"]}: '
-                  f'{item["percentage"]:.2f}%'
-              )
-
-          # ============================================================
-          # CORES DAS LINGUAGENS
-          # ============================================================
-
+          
+            print(
+                f'{item["name"]}: '
+                f'{item["percentage"]:.2f}%'
+            )
+          
           colors = {
-
-              "PHP": "#777BB4",
-
-              "JavaScript": "#F7DF1E",
-
-              "TypeScript": "#3178C6",
-
-              "Python": "#3776AB",
-
-              "Java": "#ED8B00",
-
-              "C": "#A8B9CC",
-
-              "C++": "#00599C",
-
-              "C#": "#512BD4",
-
-              "Go": "#00ADD8",
-
-              "Rust": "#DEA584",
-
-              "Ruby": "#CC342D",
-
-              "Kotlin": "#A97BFF",
-
-              "Swift": "#F05138",
-
-              "Dart": "#0175C2",
-
-              "SQL": "#CCCCCC",
+          
+            "PHP": "#777BB4",
+          
+            "JavaScript": "#F7DF1E",
+          
+            "TypeScript": "#3178C6",
+          
+            "Python": "#3776AB",
+          
+            "Java": "#ED8B00",
+          
+            "C": "#A8B9CC",
+          
+            "C++": "#00599C",
+          
+            "C#": "#512BD4",
+          
+            "Go": "#00ADD8",
+          
+            "Rust": "#DEA584",
+          
+            "Ruby": "#CC342D",
+          
+            "Kotlin": "#A97BFF",
+          
+            "Swift": "#F05138",
+          
+            "Dart": "#0175C2",
+          
+            "SQL": "#CCCCCC",
           }
-
-          # ============================================================
-          # CORES PADRÃO
-          # ============================================================
-
+          
           default_colors = [
-
-              "#82AAFF",
-
-              "#C792EA",
-
-              "#7FDBCA",
-
-              "#F78C6C",
-
-              "#FFCB6B",
-
-              "#89DDFF",
-
-              "#ADD7FF",
-
-              "#A6ACCD",
-
+          
+            "#82AAFF",
+          
+            "#C792EA",
+          
+            "#7FDBCA",
+          
+            "#F78C6C",
+          
+            "#FFCB6B",
+          
+            "#89DDFF",
+          
+            "#ADD7FF",
+          
+            "#A6ACCD",
+          
           ]
-
-          # ============================================================
-          # CONFIGURAÇÃO DO SVG
-          # ============================================================
-
-          width = 500
-          height = 190
-
-          # ============================================================
-          # INÍCIO DO SVG
-          # ============================================================
-
+          
+          width = 350
+          height = 180
+          
+          BASE_WIDTH = 300
+          BASE_HEIGHT = 180
+          
+          scale_x = width / BASE_WIDTH
+          scale_y = height / BASE_HEIGHT
+          
+          scale = min(scale_x, scale_y)
+          
+          margin_x = 24 * scale_x
+          
+          title_x = margin_x
+          title_y = 37 * scale_y
+          title_size = 16 * scale
+          
+          bar_x = margin_x
+          bar_y = 54 * scale_y
+          
+          bar_width = width - (margin_x * 2)
+          bar_height = 9 * scale_y
+          
+          bar_radius = bar_height / 2
+          
+          legend_y_start = 94 * scale_y
+          row_height = 31 * scale_y
+          
+          left_x = margin_x
+          right_x = width * 0.52
+          
+          left_percent_x = width * 0.46
+          right_percent_x = width - margin_x
+          
+          dot_radius = 5 * scale
+          
+          language_offset_x = 18 * scale_x
+          
+          legend_font_size = 11 * scale
+          
           svg = f'''<svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="{width}"
-              height="{height}"
-              viewBox="0 0 {width} {height}"
+            xmlns="http://www.w3.org/2000/svg"
+            width="{width}"
+            height="{height}"
+            viewBox="0 0 {width} {height}"
           >
-
-            <!-- =====================================================
-                 FUNDO
-                 ===================================================== -->
-
-            <rect
-              x="0.5"
-              y="0.5"
-              width="{width - 1}"
-              height="{height - 1}"
-              rx="6"
-              fill="#011627"
-              stroke="#A6ACCD"
-              stroke-width="1"
-            />
-
-            <!-- =====================================================
-                 TÍTULO
-                 ===================================================== -->
-
-            <text
-              x="24"
-              y="37"
-              fill="#C792EA"
-              font-family="Arial, Helvetica, sans-serif"
-              font-size="16"
-              font-weight="600"
-            >
-              Most Used Languages
-            </text>
+          
+          <rect
+            x="{0.5 * scale:.2f}"
+            y="{0.5 * scale:.2f}"
+            width="{width - (1 * scale):.2f}"
+            height="{height - (1 * scale):.2f}"
+            rx="{6 * scale:.2f}"
+            fill="#011627"
+            stroke="#A6ACCD"
+            stroke-width="{1 * scale:.2f}"
+          />
+          
+          <text
+            x="{title_x:.2f}"
+            y="{title_y:.2f}"
+            fill="#C792EA"
+            font-family="Arial, Helvetica, sans-serif"
+            font-size="{title_size:.2f}"
+            font-weight="600"
+          >
+            Most Used Languages
+          </text>
           '''
-
-          # ============================================================
-          # BARRA PRINCIPAL
-          # ============================================================
-
-          bar_x = 24
-          bar_y = 54
-          bar_width = 452
-          bar_height = 9
-
-          # Fundo da barra
-
+          
           svg += f'''
-            <rect
-              x="{bar_x}"
-              y="{bar_y}"
-              width="{bar_width}"
-              height="{bar_height}"
-              rx="4.5"
-              fill="#1B2B3A"
-            />
+          <rect
+            x="{bar_x:.2f}"
+            y="{bar_y:.2f}"
+            width="{bar_width:.2f}"
+            height="{bar_height:.2f}"
+            rx="{bar_radius:.2f}"
+            fill="#1B2B3A"
+          />
           '''
-
-          # ============================================================
-          # SEGMENTOS DA BARRA
-          # ============================================================
-
+          
           current_x = bar_x
-
+          
           for index, (language, value) in enumerate(languages):
-
+          
               percentage = (
                   value / total
               ) * 100
-
+          
               color = colors.get(
                   language,
                   default_colors[
                       index % len(default_colors)
                   ]
               )
-
+          
               segment_width = (
                   percentage / 100
               ) * bar_width
-
+          
               svg += f'''
-                <rect
-                  x="{current_x:.2f}"
-                  y="{bar_y}"
-                  width="{segment_width:.2f}"
-                  height="{bar_height}"
-                  fill="{color}"
-                />
-              '''
-
+          <rect
+            x="{current_x:.2f}"
+            y="{bar_y:.2f}"
+            width="{segment_width:.2f}"
+            height="{bar_height:.2f}"
+            fill="{color}"
+          />
+          '''
+          
               current_x += segment_width
-
-          # ============================================================
-          # LEGENDA
-          #
-          # Ordem:
-          #
-          # 1    4
-          # 2    5
-          # 3    6
-          # ============================================================
-
-          legend_y_start = 94
-          row_height = 31
-
-          # Coluna esquerda
-          left_x = 24
-
-          # Coluna direita
-          right_x = 260
-
-          # Posição final das porcentagens
-          left_percent_x = 230
-          right_percent_x = 476
-
-          # ============================================================
-          # FUNÇÃO PARA DESENHAR ITEM DA LEGENDA
-          # ============================================================
-
+          
           def draw_legend_item(
               language,
               value,
@@ -369,83 +308,66 @@ jobs:
               y,
               index
           ):
-
+          
               percentage = (
                   value / total
               ) * 100
-
+          
               color = colors.get(
                   language,
                   default_colors[
                       index % len(default_colors)
                   ]
               )
-
+          
               safe_language = html.escape(
                   language
               )
-
+          
               return f'''
-                <!-- Indicador -->
-
-                <circle
-                  cx="{x + 5}"
-                  cy="{y - 4}"
-                  r="5"
-                  fill="{color}"
-                />
-
-                <!-- Nome da linguagem -->
-
-                <text
-                  x="{x + 18}"
-                  y="{y}"
-                  fill="#82AAFF"
-                  font-family="Arial, Helvetica, sans-serif"
-                  font-size="11"
-                >
-                  {safe_language}
-                </text>
-
-                <!-- Porcentagem -->
-
-                <text
-                  x="{percent_x}"
-                  y="{y}"
-                  fill="#7FDBCA"
-                  font-family="Arial, Helvetica, sans-serif"
-                  font-size="11"
-                  text-anchor="end"
-                >
-                  {percentage:.2f}%
-                </text>
-              '''
-
-          # ============================================================
-          # DESENHA 3 LINHAS
-          #
-          # 1 4
-          # 2 5
-          # 3 6
-          # ============================================================
-
+          
+          <circle
+            cx="{x + (5 * scale_x):.2f}"
+            cy="{y - (4 * scale_y):.2f}"
+            r="{dot_radius:.2f}"
+            fill="{color}"
+          />
+          
+          <text
+            x="{x + language_offset_x:.2f}"
+            y="{y:.2f}"
+            fill="#82AAFF"
+            font-family="Arial, Helvetica, sans-serif"
+            font-size="{legend_font_size:.2f}"
+          >
+            {safe_language}
+          </text>
+          
+          <text
+            x="{percent_x:.2f}"
+            y="{y:.2f}"
+            fill="#7FDBCA"
+            font-family="Arial, Helvetica, sans-serif"
+            font-size="{legend_font_size:.2f}"
+            text-anchor="end"
+          >
+            {percentage:.2f}%
+          </text>
+          '''
+          
           for row in range(3):
-
+          
               y = (
                   legend_y_start
                   + (row * row_height)
               )
-
-              # --------------------------------------------------------
-              # COLUNA ESQUERDA
-              # --------------------------------------------------------
-
+          
               left_index = row
-
+          
               language_left, value_left = (
                   languages[left_index]
               )
-
+          
               svg += draw_legend_item(
                   language_left,
                   value_left,
@@ -454,17 +376,13 @@ jobs:
                   y,
                   left_index
               )
-
-              # --------------------------------------------------------
-              # COLUNA DIREITA
-              # --------------------------------------------------------
-
+          
               right_index = row + 3
-
+          
               language_right, value_right = (
                   languages[right_index]
               )
-
+          
               svg += draw_legend_item(
                   language_right,
                   value_right,
@@ -473,34 +391,21 @@ jobs:
                   y,
                   right_index
               )
-
-          # ============================================================
-          # FINALIZA SVG
-          # ============================================================
-
-          svg += "</svg>"
-
-          # ============================================================
-          # SALVA ARQUIVO
-          # ============================================================
-
+          
+          svg += '''
+          </svg>
+          '''
+          
           with open(
               "top-langs.svg",
               "w",
               encoding="utf-8"
           ) as file:
-
+          
               file.write(svg)
-
-          print(
-              "top-langs.svg gerado com sucesso!"
-          )
-
+          
+          print("top-langs.svg gerado com sucesso!")
           PY
-
-      # ================================================================
-      # COMMIT
-      # ================================================================
 
       - name: Commit SVG
         run: |
