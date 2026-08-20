@@ -64,10 +64,6 @@ jobs:
 
           print(f"Repositórios encontrados: {len(repos)}")
 
-          # ============================================================
-          # Linguagens que queremos ignorar
-          # ============================================================
-
           ignored = {
               "HTML",
               "CSS",
@@ -77,10 +73,6 @@ jobs:
           }
 
           languages = Counter()
-
-          # ============================================================
-          # Soma bytes de cada linguagem
-          # ============================================================
 
           for repo in repos:
               name = repo["full_name"]
@@ -99,11 +91,8 @@ jobs:
               except Exception as e:
                   print(f"Erro em {name}: {e}")
 
-          # ============================================================
-          # Pega as 8 linguagens principais
-          # ============================================================
 
-          languages = languages.most_common(8)
+          languages = languages.most_common(6)
 
           total = sum(value for _, value in languages)
 
@@ -128,10 +117,12 @@ jobs:
                   f'{item["name"]}: {item["percentage"]:.1f}%'
               )
 
-          # ============================================================
-          # Cores Night Owl
-          # ============================================================
+          import html
 
+          width = 500
+          height = 190
+
+          # Paleta Night Owl
           colors = {
               "PHP": "#777BB4",
               "JavaScript": "#F7DF1E",
@@ -161,13 +152,6 @@ jobs:
               "#A6ACCD",
           ]
 
-          # ============================================================
-          # SVG
-          # ============================================================
-
-          width = 500
-          height = 220
-
           svg = f'''<svg
               xmlns="http://www.w3.org/2000/svg"
               width="{width}"
@@ -175,95 +159,135 @@ jobs:
               viewBox="0 0 {width} {height}"
           >
 
-            <defs>
-              <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-                <stop offset="0%" stop-color="#011627"/>
-                <stop offset="100%" stop-color="#020E1A"/>
-              </linearGradient>
-            </defs>
-
+            <!-- Fundo -->
             <rect
-              width="100%"
-              height="100%"
-              rx="12"
-              fill="url(#bg)"
+              x="0.5"
+              y="0.5"
+              width="{width - 1}"
+              height="{height - 1}"
+              rx="5"
+              fill="#011627"
+              stroke="#A6ACCD"
+              stroke-width="1"
             />
 
+            <!-- Título -->
             <text
-              x="28"
-              y="36"
-              fill="#D6DEEB"
+              x="24"
+              y="37"
+              fill="#C792EA"
               font-family="Arial, Helvetica, sans-serif"
-              font-size="18"
+              font-size="16"
               font-weight="600"
             >
-              Top Languages
+              Most Used Languages
             </text>
           '''
 
-          y = 65
+          bar_x = 24
+          bar_y = 54
+          bar_width = 450
+          bar_height = 9
 
-          for index, item in enumerate(results):
-              name = item["name"]
-              percentage = item["percentage"]
+          # Fundo da barra
+          svg += f'''
+            <rect
+              x="{bar_x}"
+              y="{bar_y}"
+              width="{bar_width}"
+              height="{bar_height}"
+              rx="4"
+              fill="#1B2B3A"
+            />
+          '''
+
+          # Segmentos da barra
+          current_x = bar_x
+
+          for index, (language, value) in enumerate(languages):
+
+              percentage = value / total * 100
 
               color = colors.get(
-                  name,
+                  language,
                   default_colors[index % len(default_colors)]
               )
 
-              # largura máxima da barra
-              bar_width = 280
-
-              # escala baseada na maior linguagem
-              max_percentage = results[0]["percentage"]
-
-              current_width = (
-                  percentage / max_percentage
+              segment_width = (
+                  percentage / 100
               ) * bar_width
 
               svg += f'''
-                <text
-                  x="28"
-                  y="{y}"
-                  fill="#D6DEEB"
-                  font-family="Arial, Helvetica, sans-serif"
-                  font-size="12"
-                >
-                  {name}
-                </text>
-
                 <rect
-                  x="120"
-                  y="{y - 10}"
-                  width="{bar_width}"
-                  height="8"
-                  rx="4"
-                  fill="#1B2B3A"
-                />
-
-                <rect
-                  x="120"
-                  y="{y - 10}"
-                  width="{current_width:.2f}"
-                  height="8"
-                  rx="4"
+                  x="{current_x:.2f}"
+                  y="{bar_y}"
+                  width="{segment_width:.2f}"
+                  height="{bar_height}"
                   fill="{color}"
                 />
-
-                <text
-                  x="420"
-                  y="{y}"
-                  fill="#A6ACCD"
-                  font-family="Arial, Helvetica, sans-serif"
-                  font-size="12"
-                  text-anchor="end"
-                >
-                  {percentage:.1f}%
-                </text>
               '''
 
-              y += 20
+              current_x += segment_width
+
+          legend_y_start = 92
+          row_height = 27
+
+          # Divide em duas colunas
+          columns = 2
+
+          for index, (language, value) in enumerate(languages):
+
+              percentage = value / total * 100
+
+              color = colors.get(
+                  language,
+                  default_colors[index % len(default_colors)]
+              )
+
+              column = index % columns
+              row = index // columns
+
+              if column == 0:
+                  x = 24
+              else:
+                  x = 180
+
+              y = legend_y_start + (row * row_height)
+
+              # Bolinha
+              svg += f'''
+                <circle
+                  cx="{x + 5}"
+                  cy="{y - 4}"
+                  r="5"
+                  fill="{color}"
+                />
+              '''
+
+              # Nome + porcentagem
+              safe_language = html.escape(language)
+
+              svg += f'''
+                <text
+                  x="{x + 16}"
+                  y="{y}"
+                  fill="#82AAFF"
+                  font-family="Arial, Helvetica, sans-serif"
+                  font-size="11"
+                >
+                  {safe_language}
+                </text>
+
+                <text
+                  x="{x + 16 + len(language) * 6.2}"
+                  y="{y}"
+                  fill="#7FDBCA"
+                  font-family="Arial, Helvetica, sans-serif"
+                  font-size="11"
+                >
+                  {percentage:.2f}%
+                </text>
+              '''
 
           svg += "</svg>"
 
