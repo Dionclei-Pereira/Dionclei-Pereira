@@ -74,6 +74,7 @@ jobs:
             "SCSS",
             "Dockerfile",
             "Blade",
+            "Batchfile"
           }
           
           languages = Counter()
