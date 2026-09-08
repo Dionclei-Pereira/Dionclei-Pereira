@@ -93,7 +93,7 @@ jobs:
                 for language, bytes_count in data.items():
                     if language in ignored:
                          continue
-                    if language == "Blade Template":
+                    if language == "Blade":
                          language = "PHP"
                     languages[language] += bytes_count
             except Exception as e:
