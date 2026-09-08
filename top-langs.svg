@@ -39,120 +39,62 @@
 <rect
   x="28.00"
   y="54.00"
-  width="93.29"
-  height="9.00"
-  fill="#ED8B00"
-/>
-
-<rect
-  x="121.29"
-  y="54.00"
-  width="82.55"
+  width="121.97"
   height="9.00"
   fill="#777BB4"
 />
 
 <rect
-  x="203.84"
+  x="149.97"
   y="54.00"
-  width="39.68"
+  width="93.09"
   height="9.00"
-  fill="#7FDBCA"
+  fill="#ED8B00"
 />
 
 <rect
-  x="243.52"
+  x="243.07"
   y="54.00"
-  width="37.58"
+  width="37.50"
   height="9.00"
   fill="#6440e3"
 />
 
 <rect
-  x="281.10"
+  x="280.57"
   y="54.00"
-  width="36.14"
+  width="36.07"
   height="9.00"
   fill="#3178C6"
 />
 
 <rect
-  x="317.25"
+  x="316.64"
   y="54.00"
-  width="4.75"
+  width="4.74"
   height="9.00"
   fill="#F7DF1E"
 />
 
+<rect
+  x="321.38"
+  y="54.00"
+  width="0.62"
+  height="9.00"
+  fill="#e725f5"
+/>
+
 
 <circle
   cx="33.83"
   cy="90.00"
-  r="5.00"
-  fill="#ED8B00"
-/>
-
-<text
-  x="49.00"
-  y="94.00"
-  fill="#82AAFF"
-  font-family="Arial, Helvetica, sans-serif"
-  font-size="11.00"
->
-  Java
-</text>
-
-<text
-  x="161.00"
-  y="94.00"
-  fill="#7FDBCA"
-  font-family="Arial, Helvetica, sans-serif"
-  font-size="11.00"
-  text-anchor="end"
->
-  31.73%
-</text>
-
-
-<circle
-  cx="187.83"
-  cy="90.00"
-  r="5.00"
-  fill="#6440e3"
-/>
-
-<text
-  x="203.00"
-  y="94.00"
-  fill="#82AAFF"
-  font-family="Arial, Helvetica, sans-serif"
-  font-size="11.00"
->
-  C#
-</text>
-
-<text
-  x="322.00"
-  y="94.00"
-  fill="#7FDBCA"
-  font-family="Arial, Helvetica, sans-serif"
-  font-size="11.00"
-  text-anchor="end"
->
-  12.78%
-</text>
-
-
-<circle
-  cx="33.83"
-  cy="121.00"
   r="5.00"
   fill="#777BB4"
 />
 
 <text
   x="49.00"
-  y="125.00"
+  y="94.00"
   fill="#82AAFF"
   font-family="Arial, Helvetica, sans-serif"
   font-size="11.00"
@@ -162,13 +104,71 @@
 
 <text
   x="161.00"
+  y="94.00"
+  fill="#7FDBCA"
+  font-family="Arial, Helvetica, sans-serif"
+  font-size="11.00"
+  text-anchor="end"
+>
+  41.49%
+</text>
+
+
+<circle
+  cx="187.83"
+  cy="90.00"
+  r="5.00"
+  fill="#3178C6"
+/>
+
+<text
+  x="203.00"
+  y="94.00"
+  fill="#82AAFF"
+  font-family="Arial, Helvetica, sans-serif"
+  font-size="11.00"
+>
+  TypeScript
+</text>
+
+<text
+  x="322.00"
+  y="94.00"
+  fill="#7FDBCA"
+  font-family="Arial, Helvetica, sans-serif"
+  font-size="11.00"
+  text-anchor="end"
+>
+  12.27%
+</text>
+
+
+<circle
+  cx="33.83"
+  cy="121.00"
+  r="5.00"
+  fill="#ED8B00"
+/>
+
+<text
+  x="49.00"
+  y="125.00"
+  fill="#82AAFF"
+  font-family="Arial, Helvetica, sans-serif"
+  font-size="11.00"
+>
+  Java
+</text>
+
+<text
+  x="161.00"
   y="125.00"
   fill="#7FDBCA"
   font-family="Arial, Helvetica, sans-serif"
   font-size="11.00"
   text-anchor="end"
 >
-  28.08%
+  31.66%
 </text>
 
 
@@ -176,7 +176,7 @@
   cx="187.83"
   cy="121.00"
   r="5.00"
-  fill="#3178C6"
+  fill="#F7DF1E"
 />
 
 <text
@@ -186,7 +186,7 @@
   font-family="Arial, Helvetica, sans-serif"
   font-size="11.00"
 >
-  TypeScript
+  JavaScript
 </text>
 
 <text
@@ -197,7 +197,7 @@
   font-size="11.00"
   text-anchor="end"
 >
-  12.29%
+  1.61%
 </text>
 
 
@@ -205,7 +205,7 @@
   cx="33.83"
   cy="152.00"
   r="5.00"
-  fill="#7FDBCA"
+  fill="#6440e3"
 />
 
 <text
@@ -215,7 +215,7 @@
   font-family="Arial, Helvetica, sans-serif"
   font-size="11.00"
 >
-  Blade
+  C#
 </text>
 
 <text
@@ -226,7 +226,7 @@
   font-size="11.00"
   text-anchor="end"
 >
-  13.50%
+  12.76%
 </text>
 
 
@@ -234,7 +234,7 @@
   cx="187.83"
   cy="152.00"
   r="5.00"
-  fill="#F7DF1E"
+  fill="#e725f5"
 />
 
 <text
@@ -244,7 +244,7 @@
   font-family="Arial, Helvetica, sans-serif"
   font-size="11.00"
 >
-  JavaScript
+  C++
 </text>
 
 <text
@@ -255,7 +255,7 @@
   font-size="11.00"
   text-anchor="end"
 >
-  1.62%
+  0.21%
 </text>
 
 </svg>
