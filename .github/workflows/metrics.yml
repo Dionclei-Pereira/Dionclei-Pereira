@@ -89,17 +89,13 @@ jobs:
                 data = github(
                     f"https://api.github.com/repos/{name}/languages"
                 )
-				
-				for language, bytes_count in data.items():
 
-					if language in ignored:
-						continue
-
-					if language == "Blade Template":
-						language = "PHP"
-
-					languages[language] += bytes_count
-
+                for language, bytes_count in data.items():
+                    if language in ignored:
+                         continue
+                    if language == "Blade Template":
+                         language = "PHP"
+                    languages[language] += bytes_count
             except Exception as e:
           
                 print(
