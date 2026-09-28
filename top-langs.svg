@@ -39,49 +39,49 @@
 <rect
   x="28.00"
   y="54.00"
-  width="105.84"
+  width="106.68"
   height="9.00"
   fill="#ED8B00"
 />
 
 <rect
-  x="133.84"
+  x="134.68"
   y="54.00"
-  width="82.73"
+  width="83.39"
   height="9.00"
   fill="#777BB4"
 />
 
 <rect
-  x="216.58"
+  x="218.06"
   y="54.00"
-  width="50.53"
+  width="50.93"
   height="9.00"
   fill="#3178C6"
 />
 
 <rect
-  x="267.11"
+  x="268.99"
   y="54.00"
-  width="43.32"
+  width="43.66"
   height="9.00"
   fill="#6440e3"
 />
 
 <rect
-  x="310.43"
+  x="312.65"
   y="54.00"
-  width="6.59"
+  width="5.02"
   height="9.00"
-  fill="#FFCB6B"
+  fill="#F7DF1E"
 />
 
 <rect
-  x="317.02"
+  x="317.67"
   y="54.00"
-  width="4.98"
+  width="4.33"
   height="9.00"
-  fill="#F7DF1E"
+  fill="#e725f5"
 />
 
 
@@ -110,7 +110,7 @@
   font-size="11.00"
   text-anchor="end"
 >
-  36.00%
+  36.28%
 </text>
 
 
@@ -139,7 +139,7 @@
   font-size="11.00"
   text-anchor="end"
 >
-  14.73%
+  14.85%
 </text>
 
 
@@ -168,7 +168,7 @@
   font-size="11.00"
   text-anchor="end"
 >
-  28.14%
+  28.36%
 </text>
 
 
@@ -176,7 +176,7 @@
   cx="187.83"
   cy="121.00"
   r="5.00"
-  fill="#FFCB6B"
+  fill="#F7DF1E"
 />
 
 <text
@@ -186,7 +186,7 @@
   font-family="Arial, Helvetica, sans-serif"
   font-size="11.00"
 >
-  VBA
+  JavaScript
 </text>
 
 <text
@@ -197,7 +197,7 @@
   font-size="11.00"
   text-anchor="end"
 >
-  2.24%
+  1.71%
 </text>
 
 
@@ -226,7 +226,7 @@
   font-size="11.00"
   text-anchor="end"
 >
-  17.19%
+  17.32%
 </text>
 
 
@@ -234,7 +234,7 @@
   cx="187.83"
   cy="152.00"
   r="5.00"
-  fill="#F7DF1E"
+  fill="#e725f5"
 />
 
 <text
@@ -244,7 +244,7 @@
   font-family="Arial, Helvetica, sans-serif"
   font-size="11.00"
 >
-  JavaScript
+  C++
 </text>
 
 <text
@@ -255,7 +255,7 @@
   font-size="11.00"
   text-anchor="end"
 >
-  1.69%
+  1.47%
 </text>
 
 </svg>
