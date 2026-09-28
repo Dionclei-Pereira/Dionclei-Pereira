@@ -73,7 +73,8 @@ jobs:
             "CSS",
             "SCSS",
             "Dockerfile",
-            "Batchfile"
+            "Batchfile",
+            "VBA"
           }
           
           languages = Counter()
