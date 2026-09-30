@@ -39,47 +39,47 @@
 <rect
   x="28.00"
   y="54.00"
-  width="106.68"
+  width="106.62"
   height="9.00"
   fill="#ED8B00"
 />
 
 <rect
-  x="134.68"
+  x="134.62"
   y="54.00"
-  width="83.39"
+  width="83.23"
   height="9.00"
   fill="#777BB4"
 />
 
 <rect
-  x="218.06"
+  x="217.85"
   y="54.00"
-  width="50.93"
+  width="50.83"
   height="9.00"
   fill="#3178C6"
 />
 
 <rect
-  x="268.99"
+  x="268.68"
   y="54.00"
-  width="43.66"
+  width="43.58"
   height="9.00"
   fill="#6440e3"
 />
 
 <rect
-  x="312.65"
+  x="312.26"
   y="54.00"
-  width="5.02"
+  width="5.01"
   height="9.00"
   fill="#F7DF1E"
 />
 
 <rect
-  x="317.67"
+  x="317.27"
   y="54.00"
-  width="4.33"
+  width="4.73"
   height="9.00"
   fill="#e725f5"
 />
@@ -110,7 +110,7 @@
   font-size="11.00"
   text-anchor="end"
 >
-  36.28%
+  36.26%
 </text>
 
 
@@ -139,7 +139,7 @@
   font-size="11.00"
   text-anchor="end"
 >
-  14.85%
+  14.82%
 </text>
 
 
@@ -168,7 +168,7 @@
   font-size="11.00"
   text-anchor="end"
 >
-  28.36%
+  28.31%
 </text>
 
 
@@ -197,7 +197,7 @@
   font-size="11.00"
   text-anchor="end"
 >
-  1.71%
+  1.70%
 </text>
 
 
@@ -226,7 +226,7 @@
   font-size="11.00"
   text-anchor="end"
 >
-  17.32%
+  17.29%
 </text>
 
 
@@ -255,7 +255,7 @@
   font-size="11.00"
   text-anchor="end"
 >
-  1.47%
+  1.61%
 </text>
 
 </svg>
