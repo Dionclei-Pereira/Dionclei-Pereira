@@ -39,47 +39,47 @@
 <rect
   x="28.00"
   y="54.00"
-  width="134.58"
+  width="130.70"
   height="9.00"
   fill="#ED8B00"
 />
 
 <rect
-  x="162.58"
+  x="158.70"
   y="54.00"
-  width="70.19"
-  height="9.00"
-  fill="#777BB4"
-/>
-
-<rect
-  x="232.76"
-  y="54.00"
-  width="43.56"
+  width="70.11"
   height="9.00"
   fill="#3178C6"
 />
 
 <rect
-  x="276.32"
+  x="228.82"
   y="54.00"
-  width="36.75"
+  width="56.45"
+  height="9.00"
+  fill="#777BB4"
+/>
+
+<rect
+  x="285.27"
+  y="54.00"
+  width="29.56"
   height="9.00"
   fill="#6440e3"
 />
 
 <rect
-  x="313.07"
+  x="314.82"
   y="54.00"
-  width="4.79"
+  width="3.85"
   height="9.00"
   fill="#F7DF1E"
 />
 
 <rect
-  x="317.86"
+  x="318.67"
   y="54.00"
-  width="4.14"
+  width="3.33"
   height="9.00"
   fill="#e725f5"
 />
@@ -110,7 +110,7 @@
   font-size="11.00"
   text-anchor="end"
 >
-  45.77%
+  44.46%
 </text>
 
 
@@ -139,7 +139,7 @@
   font-size="11.00"
   text-anchor="end"
 >
-  12.50%
+  10.05%
 </text>
 
 
@@ -147,7 +147,7 @@
   cx="33.83"
   cy="121.00"
   r="5.00"
-  fill="#777BB4"
+  fill="#3178C6"
 />
 
 <text
@@ -157,7 +157,7 @@
   font-family="Arial, Helvetica, sans-serif"
   font-size="11.00"
 >
-  PHP
+  TypeScript
 </text>
 
 <text
@@ -168,7 +168,7 @@
   font-size="11.00"
   text-anchor="end"
 >
-  23.87%
+  23.85%
 </text>
 
 
@@ -197,7 +197,7 @@
   font-size="11.00"
   text-anchor="end"
 >
-  1.63%
+  1.31%
 </text>
 
 
@@ -205,7 +205,7 @@
   cx="33.83"
   cy="152.00"
   r="5.00"
-  fill="#3178C6"
+  fill="#777BB4"
 />
 
 <text
@@ -215,7 +215,7 @@
   font-family="Arial, Helvetica, sans-serif"
   font-size="11.00"
 >
-  TypeScript
+  PHP
 </text>
 
 <text
@@ -226,7 +226,7 @@
   font-size="11.00"
   text-anchor="end"
 >
-  14.82%
+  19.20%
 </text>
 
 
@@ -255,7 +255,7 @@
   font-size="11.00"
   text-anchor="end"
 >
-  1.41%
+  1.13%
 </text>
 
 </svg>
