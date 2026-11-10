@@ -22,7 +22,7 @@
 
 ### 💻 Main Skills
 [![My Skills](https://skillicons.dev/icons?i=java,php,ts,rabbitmq,hibernate,aws)](https://skillicons.dev) <br/>
-[![My Skills](https://skillicons.dev/icons?i=spring,laravel,angular,bootstrap,mysql,docker)](https://skillicons.dev)
+[![My Skills](https://skillicons.dev/icons?i=spring,laravel,angular,reactivex,mysql,docker)](https://skillicons.dev)
 
 <br/>
 
