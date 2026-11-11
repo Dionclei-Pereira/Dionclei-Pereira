@@ -39,49 +39,49 @@
 <rect
   x="28.00"
   y="54.00"
-  width="135.03"
+  width="135.32"
   height="9.00"
   fill="#ED8B00"
 />
 
 <rect
-  x="163.03"
+  x="163.32"
   y="54.00"
-  width="76.22"
+  width="76.38"
   height="9.00"
   fill="#3178C6"
 />
 
 <rect
-  x="239.25"
+  x="239.70"
   y="54.00"
-  width="52.47"
+  width="52.58"
   height="9.00"
   fill="#777BB4"
 />
 
 <rect
-  x="291.72"
+  x="292.27"
   y="54.00"
-  width="14.78"
+  width="14.81"
   height="9.00"
   fill="#6440e3"
 />
 
 <rect
-  x="306.50"
+  x="307.09"
   y="54.00"
-  width="13.19"
+  width="13.22"
   height="9.00"
   fill="#F7DF1E"
 />
 
 <rect
-  x="319.69"
+  x="320.31"
   y="54.00"
-  width="2.31"
+  width="1.69"
   height="9.00"
-  fill="#89DDFF"
+  fill="#e725f5"
 />
 
 
@@ -110,7 +110,7 @@
   font-size="11.00"
   text-anchor="end"
 >
-  45.93%
+  46.03%
 </text>
 
 
@@ -139,7 +139,7 @@
   font-size="11.00"
   text-anchor="end"
 >
-  5.03%
+  5.04%
 </text>
 
 
@@ -168,7 +168,7 @@
   font-size="11.00"
   text-anchor="end"
 >
-  25.93%
+  25.98%
 </text>
 
 
@@ -197,7 +197,7 @@
   font-size="11.00"
   text-anchor="end"
 >
-  4.49%
+  4.50%
 </text>
 
 
@@ -226,7 +226,7 @@
   font-size="11.00"
   text-anchor="end"
 >
-  17.85%
+  17.88%
 </text>
 
 
@@ -234,7 +234,7 @@
   cx="187.83"
   cy="152.00"
   r="5.00"
-  fill="#89DDFF"
+  fill="#e725f5"
 />
 
 <text
@@ -244,7 +244,7 @@
   font-family="Arial, Helvetica, sans-serif"
   font-size="11.00"
 >
-  Vue
+  C++
 </text>
 
 <text
@@ -255,7 +255,7 @@
   font-size="11.00"
   text-anchor="end"
 >
-  0.78%
+  0.58%
 </text>
 
 </svg>
