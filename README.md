@@ -36,7 +36,7 @@
 ## 🗺️ Tech Roadmap
 
 **Backend:** Java • Spring • Laravel • PHP <br/>
-**Frontend:** Angular • React <br/>
+**Frontend:** Angular • React (learning) <br/>
 **DevOps:** Docker • AWS • Firebase <br/>
 **Database:** MySQL • SQLite • MongoDB (learning)
 
